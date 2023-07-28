@@ -12,7 +12,7 @@ module.exports = {
           {text: '随记', link: '/notes/导出Excel'},
           {text: 'element-plus相关', link: '/element-plus/el-table封装'},
           {text: 'js相关', link: '/js/常用工具函数'},
-          {text: 'css相关', link: 'css/css优先级'}
+          {text: 'css相关', link: '/css/css优先级'}
         ]
       },
       {

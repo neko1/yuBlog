@@ -5,7 +5,7 @@
 ```ts
 // uploadProps.ts
 import type { ExtractPropTypes } from 'vue'
-import { isArray } from '@pureadmin/utils'
+import { isArray } from 'lodash'
 import { ElUpload } from 'element-plus'
 
 /**
@@ -41,7 +41,7 @@ export type UploadEmits = typeof uploadEmits
 ```tsx
 import './upload.scss'
 import { ref, computed, defineComponent, unref, warn } from 'vue'
-import { cloneDeep, isNumber } from '@pureadmin/utils'
+import { cloneDeep, isNumber } from 'lodash'
 import { uploadProps, uploadEmits } from './uploadProps'
 import { IconifyIconOffline } from '@/components/ReIcon'
 import { getToken } from '@/utils/auth'
