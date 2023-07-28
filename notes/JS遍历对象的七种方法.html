@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS遍历对象的七种方法 | 前端学习笔记</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="分享笔记，技术博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.e8e4f3a3.css" as="style"><link rel="preload" href="/assets/js/app.7d735634.js" as="script"><link rel="preload" href="/assets/js/2.15dacd45.js" as="script"><link rel="preload" href="/assets/js/15.a086b921.js" as="script"><link rel="prefetch" href="/assets/js/10.94fefc42.js"><link rel="prefetch" href="/assets/js/11.3ce2fe57.js"><link rel="prefetch" href="/assets/js/12.a928382a.js"><link rel="prefetch" href="/assets/js/13.b5bb3fcd.js"><link rel="prefetch" href="/assets/js/14.2dc17f74.js"><link rel="prefetch" href="/assets/js/16.f4480a95.js"><link rel="prefetch" href="/assets/js/17.4cfbb6ba.js"><link rel="prefetch" href="/assets/js/18.c8b725ab.js"><link rel="prefetch" href="/assets/js/19.3ad567b7.js"><link rel="prefetch" href="/assets/js/20.23b41450.js"><link rel="prefetch" href="/assets/js/21.5c23290a.js"><link rel="prefetch" href="/assets/js/22.d4f4bac7.js"><link rel="prefetch" href="/assets/js/3.d91b15a2.js"><link rel="prefetch" href="/assets/js/4.db282a9c.js"><link rel="prefetch" href="/assets/js/5.66d20a85.js"><link rel="prefetch" href="/assets/js/6.3a5da5f7.js"><link rel="prefetch" href="/assets/js/7.46265447.js"><link rel="prefetch" href="/assets/js/8.a7457492.js"><link rel="prefetch" href="/assets/js/9.277ee2f2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e8e4f3a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端学习笔记</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常开发记录" class="dropdown-title"><span class="title">日常开发记录</span> <span class="arrow down"></span></button> <button type="button" aria-label="日常开发记录" class="mobile-dropdown-title"><span class="title">日常开发记录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/导出Excel.html" class="nav-link">
+  随记
+</a></li><li class="dropdown-item"><!----> <a href="/element-plus/el-table封装.html" class="nav-link">
+  element-plus相关
+</a></li><li class="dropdown-item"><!----> <a href="/js/常用工具函数.html" class="nav-link">
+  js相关
+</a></li></ul></div></div><div class="nav-item"><a href="/write/常见手写代码.html" class="nav-link">
+  常见手写代码
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常开发记录" class="dropdown-title"><span class="title">日常开发记录</span> <span class="arrow down"></span></button> <button type="button" aria-label="日常开发记录" class="mobile-dropdown-title"><span class="title">日常开发记录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/导出Excel.html" class="nav-link">
+  随记
+</a></li><li class="dropdown-item"><!----> <a href="/element-plus/el-table封装.html" class="nav-link">
+  element-plus相关
+</a></li><li class="dropdown-item"><!----> <a href="/js/常用工具函数.html" class="nav-link">
+  js相关
+</a></li></ul></div></div><div class="nav-item"><a href="/write/常见手写代码.html" class="nav-link">
+  常见手写代码
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/notes/导出Excel.html" class="sidebar-link">axios请求导出excel</a></li><li><a href="/notes/promisethen.html" class="sidebar-link">promise.then</a></li><li><a href="/notes/JS遍历对象的七种方法.html" class="active sidebar-link">JS遍历对象的七种方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/JS遍历对象的七种方法.html#描述" class="sidebar-link">描述</a></li><li class="sidebar-sub-header"><a href="/notes/JS遍历对象的七种方法.html#根据遍历目标区分" class="sidebar-link">根据遍历目标区分</a></li><li class="sidebar-sub-header"><a href="/notes/JS遍历对象的七种方法.html#根据返回值区分" class="sidebar-link">根据返回值区分</a></li></ul></li><li><a href="/notes/怎么在老项目中加入eslint规则.html" class="sidebar-link">怎么在老项目中加入eslint规则</a></li><li><a href="/notes/HTTP请求.html" class="sidebar-link">HTTP请求</a></li><li><a href="/notes/git相关.html" class="sidebar-link">git相关</a></li><li><a href="/notes/js小技巧.html" class="sidebar-link">js小技巧</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="js遍历对象的七种方法"><a href="#js遍历对象的七种方法" class="header-anchor">#</a> JS遍历对象的七种方法</h1> <h2 id="描述"><a href="#描述" class="header-anchor">#</a> 描述</h2> <p><strong>for…in</strong></p> <p><font color="DeepPink">for…in</font> 可以遍历对象的所有可枚举属性，包括对象本身的和对象继承来的属性</p> <p><strong>Object.keys()</strong></p> <p><font color="DeepPink">Object.keys()</font> 方法可以遍历到所有对象本身的可枚举属性，但是其返回值为数组</p> <p><strong>Object.values()</strong></p> <p><font color="DeepPink">Object.values()</font> 与 <font color="DeepPink">Object.keys()</font> 遍历对象的特性是相同的，但是其返回的结构是以遍历的属性值构成的数组</p> <p><strong>Object.entries()</strong></p> <p><font color="DeepPink">Object.entries()</font> 的返回值为 <font color="DeepPink">Object.values()</font> 与 <font color="DeepPink">Object.keys()</font> 的结合，也就是说它会返回一个嵌套数组，数组内包括了属性名与属性值</p> <p><strong>Object.getOwnPropertyNames()</strong></p> <p>其返回结果与 <font color="DeepPink">Object.keys()</font> 对应，但是他得特性与其相反，会返回对象得所有属性，包括了不可枚举属性</p> <p><strong>Object.getOwnPropertySymbols()</strong></p> <p><font color="DeepPink">Object.getOwnPropertySymbols()</font> 会返回对象内的所有 Symbol 属性，返回形式依旧是数组，值得注意的是，在对象初始化的时候，内部是不会包含任何
+Symbol 属性</p> <p><strong>Reflect.ownKeys()</strong></p> <p><font color="DeepPink">Reflect.ownKeys()</font> 返回的是一个大杂烩数组，即包含了对象的所有属性，无论是否可枚举还是属性是 Symbol，还是继承，将所有的属性返回</p> <h2 id="根据遍历目标区分"><a href="#根据遍历目标区分" class="header-anchor">#</a> 根据遍历目标区分</h2> <table><thead><tr><th>遍历目标</th> <th style="text-align:center;">方法</th></tr></thead> <tbody><tr><td>遍历对象本身的可枚举属性不包含继承来的属性（不包括Symbol()）</td> <td style="text-align:center;">Object.keys()<br> Object.values() <br>Object.entries()</td></tr> <tr><td>遍历对象本身的可枚举属性包括继承来的属性（不包括Symbol()）</td> <td style="text-align:center;">for…in</td></tr> <tr><td>遍历对象本身的所有属性（不包括Symbol()）</td> <td style="text-align:center;">Object.getOwnPropertyNames()</td></tr> <tr><td>遍历对象的Symbol()属性</td> <td style="text-align:center;">Object.getOwnPropertySymbols()</td></tr> <tr><td>遍历对象的所有属性</td> <td style="text-align:center;">Reflect.ownKeys()</td></tr></tbody></table> <h2 id="根据返回值区分"><a href="#根据返回值区分" class="header-anchor">#</a> 根据返回值区分</h2> <table><thead><tr><th>返回值</th> <th style="text-align:center;">方法</th></tr></thead> <tbody><tr><td>返回数组</td> <td style="text-align:center;">Object.keys()<br>Object.values()<br>Object.entries()<br>Object.getOwnPropertyNames()<br>Reflect.ownKeys()</td></tr> <tr><td>不返回值</td> <td style="text-align:center;">for…in</td></tr></tbody></table> <p><strong>根据遍历值区分</strong></p> <table><thead><tr><th>遍历值</th> <th style="text-align:center;">方法</th></tr></thead> <tbody><tr><td>遍历属性</td> <td style="text-align:center;">Reflect.ownKeys()<br>Object.getOwnPropertyNames()<br>Object.keys()</td></tr> <tr><td>遍历属性值</td> <td style="text-align:center;">Object.getOwnPropertySymbols()<br>Object.values()</td></tr> <tr><td>遍历全部</td> <td style="text-align:center;">for…in<br>Object.entries()</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notes/promisethen.html" class="prev">
+        promise.then
+      </a></span> <span class="next"><a href="/notes/怎么在老项目中加入eslint规则.html">
+        怎么在老项目中加入eslint规则
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7d735634.js" defer></script><script src="/assets/js/2.15dacd45.js" defer></script><script src="/assets/js/15.a086b921.js" defer></script>
+  </body>
+</html>
