@@ -29,6 +29,7 @@ module.exports = {
         ['HTTP请求', 'HTTP请求'],
         ['git相关', 'git相关'],
         ['js小技巧', 'js小技巧'],
+        ['cache', '强缓存、协商缓存'],
       ],
       '/element-plus/': [
         ['el-table封装', 'Table拓展'],
@@ -47,6 +48,7 @@ module.exports = {
       ],
       '/css/': [
         ['css优先级', 'CSS优先级'],
+        ['场景应用', '场景应用'],
       ]
     }
   },
