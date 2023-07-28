@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/yuBlog/',
   title: '前端学习笔记',
   description: '分享笔记，技术博客',
   themeConfig: {
