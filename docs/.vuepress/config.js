@@ -12,6 +12,7 @@ module.exports = {
           {text: '随记', link: '/notes/导出Excel'},
           {text: 'element-plus相关', link: '/element-plus/el-table封装'},
           {text: 'js相关', link: '/js/常用工具函数'},
+          {text: 'css相关', link: 'css/css优先级'}
         ]
       },
       {
@@ -42,6 +43,10 @@ module.exports = {
         ['常用工具函数', '常用工具函数'],
         // ['TS基础', 'TS基础'],
         ['tsconfig速查', 'tsconfig.json配置详情'],
+        ['svg批量转化vue组件', 'svg批量转化vue组件'],
+      ],
+      '/css/': [
+        ['css优先级', 'CSS优先级'],
       ]
     }
   },
