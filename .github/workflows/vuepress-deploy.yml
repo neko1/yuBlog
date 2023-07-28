@@ -12,6 +12,6 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.WUYUHENG }}
           TARGET_REPO: neko1/yuBlog
-          TARGET_BRANCH: main
+#          TARGET_BRANCH: main
           BUILD_SCRIPT: yarn && yarn build
           BUILD_DIR: docs/.vuepress/dist/
