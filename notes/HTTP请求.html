@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTTP请求 | 前端学习笔记</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="分享笔记，技术博客">
+    
+    <link rel="preload" href="/yuBlog/assets/css/0.styles.bbc9ffa2.css" as="style"><link rel="preload" href="/yuBlog/assets/js/app.e921dd87.js" as="script"><link rel="preload" href="/yuBlog/assets/js/2.c9e5cedb.js" as="script"><link rel="preload" href="/yuBlog/assets/js/1.a6941b39.js" as="script"><link rel="preload" href="/yuBlog/assets/js/33.848c2b5f.js" as="script"><link rel="prefetch" href="/yuBlog/assets/js/10.a02f9a72.js"><link rel="prefetch" href="/yuBlog/assets/js/11.c62b6b34.js"><link rel="prefetch" href="/yuBlog/assets/js/12.10f4b7b2.js"><link rel="prefetch" href="/yuBlog/assets/js/13.a5af1de5.js"><link rel="prefetch" href="/yuBlog/assets/js/14.259dac0a.js"><link rel="prefetch" href="/yuBlog/assets/js/15.114dfd5c.js"><link rel="prefetch" href="/yuBlog/assets/js/16.b796cb59.js"><link rel="prefetch" href="/yuBlog/assets/js/17.c2838453.js"><link rel="prefetch" href="/yuBlog/assets/js/18.6e110200.js"><link rel="prefetch" href="/yuBlog/assets/js/19.d6620149.js"><link rel="prefetch" href="/yuBlog/assets/js/20.a728a170.js"><link rel="prefetch" href="/yuBlog/assets/js/21.8f6f4046.js"><link rel="prefetch" href="/yuBlog/assets/js/22.6180816b.js"><link rel="prefetch" href="/yuBlog/assets/js/23.c37b313e.js"><link rel="prefetch" href="/yuBlog/assets/js/24.19db3f7e.js"><link rel="prefetch" href="/yuBlog/assets/js/25.9665aa65.js"><link rel="prefetch" href="/yuBlog/assets/js/26.0933530b.js"><link rel="prefetch" href="/yuBlog/assets/js/27.16822470.js"><link rel="prefetch" href="/yuBlog/assets/js/28.34167dbf.js"><link rel="prefetch" href="/yuBlog/assets/js/29.ae4123b5.js"><link rel="prefetch" href="/yuBlog/assets/js/3.bd89fe37.js"><link rel="prefetch" href="/yuBlog/assets/js/30.d9902cb9.js"><link rel="prefetch" href="/yuBlog/assets/js/31.9880de5a.js"><link rel="prefetch" href="/yuBlog/assets/js/32.0c364810.js"><link rel="prefetch" href="/yuBlog/assets/js/34.38dc3b3b.js"><link rel="prefetch" href="/yuBlog/assets/js/35.bc92c102.js"><link rel="prefetch" href="/yuBlog/assets/js/36.ccd1fe63.js"><link rel="prefetch" href="/yuBlog/assets/js/37.c0d58d42.js"><link rel="prefetch" href="/yuBlog/assets/js/38.b40fdb4e.js"><link rel="prefetch" href="/yuBlog/assets/js/39.d1956141.js"><link rel="prefetch" href="/yuBlog/assets/js/4.184df7a2.js"><link rel="prefetch" href="/yuBlog/assets/js/40.34e7de8f.js"><link rel="prefetch" href="/yuBlog/assets/js/41.3b9e8b1f.js"><link rel="prefetch" href="/yuBlog/assets/js/5.ea18c3bc.js"><link rel="prefetch" href="/yuBlog/assets/js/6.68ec331a.js"><link rel="prefetch" href="/yuBlog/assets/js/7.0c193685.js"><link rel="prefetch" href="/yuBlog/assets/js/vendors~docsearch.19933dad.js">
+    <link rel="stylesheet" href="/yuBlog/assets/css/0.styles.bbc9ffa2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/yuBlog/" class="home-link router-link-active"><!----> <span class="site-name">前端学习笔记</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/yuBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常开发记录" class="dropdown-title"><span class="title">日常开发记录</span> <span class="arrow down"></span></button> <button type="button" aria-label="日常开发记录" class="mobile-dropdown-title"><span class="title">日常开发记录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/yuBlog/notes/导出Excel.html" class="nav-link">
+  随记
+</a></li><li class="dropdown-item"><!----> <a href="/yuBlog/element-plus/el-table封装.html" class="nav-link">
+  element-plus相关
+</a></li><li class="dropdown-item"><!----> <a href="/yuBlog/js/常用工具函数.html" class="nav-link">
+  js相关
+</a></li><li class="dropdown-item"><!----> <a href="/yuBlog/css/css优先级.html" class="nav-link">
+  css相关
+</a></li></ul></div></div><div class="nav-item"><a href="/yuBlog/write/常见手写代码.html" class="nav-link">
+  常见手写代码
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/yuBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常开发记录" class="dropdown-title"><span class="title">日常开发记录</span> <span class="arrow down"></span></button> <button type="button" aria-label="日常开发记录" class="mobile-dropdown-title"><span class="title">日常开发记录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/yuBlog/notes/导出Excel.html" class="nav-link">
+  随记
+</a></li><li class="dropdown-item"><!----> <a href="/yuBlog/element-plus/el-table封装.html" class="nav-link">
+  element-plus相关
+</a></li><li class="dropdown-item"><!----> <a href="/yuBlog/js/常用工具函数.html" class="nav-link">
+  js相关
+</a></li><li class="dropdown-item"><!----> <a href="/yuBlog/css/css优先级.html" class="nav-link">
+  css相关
+</a></li></ul></div></div><div class="nav-item"><a href="/yuBlog/write/常见手写代码.html" class="nav-link">
+  常见手写代码
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/yuBlog/notes/导出Excel.html" class="sidebar-link">axios请求导出excel</a></li><li><a href="/yuBlog/notes/promisethen.html" class="sidebar-link">promise.then</a></li><li><a href="/yuBlog/notes/JS遍历对象的七种方法.html" class="sidebar-link">JS遍历对象的七种方法</a></li><li><a href="/yuBlog/notes/怎么在老项目中加入eslint规则.html" class="sidebar-link">怎么在老项目中加入eslint规则</a></li><li><a href="/yuBlog/notes/HTTP请求.html" class="active sidebar-link">HTTP请求</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/yuBlog/notes/HTTP请求.html#http请求状态码" class="sidebar-link">HTTP请求状态码</a></li><li class="sidebar-sub-header"><a href="/yuBlog/notes/HTTP请求.html#restful-规范及其理解" class="sidebar-link">Restful 规范及其理解</a></li><li class="sidebar-sub-header"><a href="/yuBlog/notes/HTTP请求.html#get请求-和-post请求的区别" class="sidebar-link">Get请求 和 Post请求的区别</a></li></ul></li><li><a href="/yuBlog/notes/git相关.html" class="sidebar-link">git相关</a></li><li><a href="/yuBlog/notes/js小技巧.html" class="sidebar-link">js小技巧</a></li><li><a href="/yuBlog/notes/cache.html" class="sidebar-link">强缓存、协商缓存</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="http请求"><a href="#http请求" class="header-anchor">#</a> HTTP请求</h1> <h2 id="http请求状态码"><a href="#http请求状态码" class="header-anchor">#</a> HTTP请求状态码</h2> <h3 id="常用状态码"><a href="#常用状态码" class="header-anchor">#</a> 常用状态码</h3> <ul><li>200 - 请求成功</li> <li>301 - 资源（网页等）被永久转移到其它URL</li> <li>404 - 请求的资源（网页等）不存在</li> <li>500 - 内部服务器错误</li></ul> <h3 id="分类"><a href="#分类" class="header-anchor">#</a> 分类</h3> <ul><li>100 - 客户端请求继续</li> <li>101 - 切换更高的协议</li> <li>200 - 请求成功</li> <li>201 - 请求成功并创建了新的资源</li> <li>202 - 请求已接受，但未完成处理</li> <li>203 - 请求成功，非授权的信息</li> <li>204 - 请求成功，无内容返回</li> <li>205 - 请求成功，客户端需重置内容</li> <li>206 - 请求成功，服务端处理了部分GET请求</li> <li>300 - 请求的资源包含多种选择</li> <li>301 - 请求重定向，永久移动</li> <li>302 - 请求重定向，临时移动</li> <li>303 - 请求重定向，查看其它地址，使用GET和POST时查看</li> <li>304 - 请求的资源未修改，服务器返回此状态码时，不会返回任何资源，客户端会访问缓存资源</li> <li>305 - 代理请求</li> <li>400 - 客户端请求的语法错误，服务器无法理解</li> <li>401 - 请求要求用户的身份认证</li> <li>403 - 服务器理解请求客户端的请求，但是拒绝执行此请求</li> <li>404 - 未找到资源</li> <li>405 - 客户端请求中的方法被禁止</li> <li>406 - 服务器无法根据客户端请求的内容特性完成请求</li> <li>407 - 请求要求代理的身份认证</li> <li>408 - 请求时间过长，超时</li> <li>409 - 服务器完成客户端的 PUT 请求时可能返回此代码，服务器处理请求时发生了冲突</li> <li>410 - 客户端请求的资源已经不存在</li> <li>411 - 服务器无法处理客户端发送的不带Content-Length的请求信息</li> <li>412 - 客户端请求信息的先决条件错误</li> <li>413 - 请求的实体过大，服务器无法处理，因此拒绝请求</li> <li>414 - 请求的URI过长（URI通常为网址），服务器无法处理</li> <li>415 - 服务器无法处理请求附带的媒体格式</li> <li>416 - 客户端请求的范围无效</li> <li>417 - 服务器无法满足Expect的请求头信息</li> <li>500 - 服务器内部错误，无法完成请求</li> <li>501 - 服务器不支持请求的功能，无法完成请求</li> <li>502 - 作为网关或者代理工作的服务器尝试执行请求时，从远程服务器接收到了一个无效的响应</li> <li>505 - 服务器不支持请求的HTTP协议的版本，无法完成处理</li></ul> <h2 id="restful-规范及其理解"><a href="#restful-规范及其理解" class="header-anchor">#</a> Restful 规范及其理解</h2> <p>REST 是Representational State Transfer的缩写，翻译是”表现层状态转化”（表述形式的状态转换）。 可以总结为一句话：REST是所有Web应用都应该遵守的架构设计指导原则。<br>
+面向资源是REST最明显的特征，对于同一个资源的一组不同的操作。资源是服务器上一个可命名的抽象概念，资源是以名词为核心来组织的，首先关注的是名词。REST要求，必须通过统一的接口来对资源执行各种操作。对于每个资源只能执行一组有限的操作。</p> <p><strong>Restful架构</strong></p> <ul><li>每个URL代表一种资源；</li> <li>客户端和服务器之间，传递这种资源的某种表现层；</li> <li>客户端通过四个HTTP动词，对服务器端资源进行操作，实现&quot;表现层状态转化&quot;。</li></ul> <h2 id="get请求-和-post请求的区别"><a href="#get请求-和-post请求的区别" class="header-anchor">#</a> Get请求 和 Post请求的区别</h2> <ul><li>Get是不安全的，因为在传输过程，数据被放在请求的URL中；Post的所有操作对用户来说都是不可见的</li> <li>Get传送的数据量较小，这主要是因为受URL长度限制；Post传送的数据量较大，一般被默认为不受限制</li> <li>Get限制Form表单的数据集的值必须为ASCII字符；而Post支持整个ISO10646字符集</li> <li>Get执行效率却比Post方法好。Get是form提交的默认方法</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/yuBlog/notes/怎么在老项目中加入eslint规则.html" class="prev">
+        怎么在老项目中加入eslint规则
+      </a></span> <span class="next"><a href="/yuBlog/notes/git相关.html">
+        git相关
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/yuBlog/assets/js/app.e921dd87.js" defer></script><script src="/yuBlog/assets/js/2.c9e5cedb.js" defer></script><script src="/yuBlog/assets/js/1.a6941b39.js" defer></script><script src="/yuBlog/assets/js/33.848c2b5f.js" defer></script>
+  </body>
+</html>
